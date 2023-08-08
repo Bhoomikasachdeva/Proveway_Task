@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 20px;
+}
+
+/* utility classes */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.master {
+    max-width: 550px;
+    margin: 0 auto;
+    padding-inline: 10px;
+    /* background-color: yellow; */
+    margin-top: 20px;
+}
+
+/* styling start here */
+
+.main_heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 1.7rem;
+    color: #007f61;
+}
+
+.main_heading::before,
+.main_heading::after {
+    content: '';
+    width: 26%;
+    height: 2px;
+    background-color: #dbdbdb;
+    position: absolute;
+}
+
+.main_heading::before {
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main_heading::after {
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.pair_parent {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 7px;
+    border: 2px solid #dbdbdb;
+}
+
+.pair_parent .radio_btn {
+    width: 10%;
+}
+
+.pair_parent .basic_details {
+    width: 80%;
+}
+
+.pair_parent .basic_details .no_of_pair {
+    color: #000;
+    font-family: Metropolis;
+    font-size: 14.461px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pair_parent .basic_details .name {
+    color: #000;
+    font-family: Metropolis;
+    font-size: 14.461px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pair_parent .discount {
+    margin-top: 0.2rem;
+    width: 35%;
+    text-align: right;
+    font-family: Metropolis;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #000;
+    font-size: 14.461px;
+}
+
+
+/* pair details */
+
+.pair_details {
+    width: 64%;
+}
+
+.pair_details .sub_heading {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-block: 0.6rem;
+    margin-left: 0.1rem;
+}
+
+
+.pair_details .left {
+    margin-right: 1.2rem;
+}
+
+
+.pair_details .left .sub_heading {
+    margin-left: 2rem;
+}
+
+.pair_box {
+    margin-bottom: 1rem;
+}
+
+
+.flex.same_box {
+    align-items: end;
+}
+
+.flex.same_box {
+    align-items: end;
+}
+
+.pair_box span {
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    margin-left: 0.6rem;
+}
+
+select.drop_down {
+    width: 121px;
+    height: 40px;
+}
+
+/* on click */
+.active {
+    background-color: #F4FBF9;
+    ;
+    border-color: #007f61;
+}
+
+.free_shipping_content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.free_shipping_content .green_color {
+    color: #007F61;
+}
+
+.free_shipping_content p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.button_box button {
+    width: 100%;
+    background-color: #007F61;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 4px, 4px, 4px, 0px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.button_box i {
+    margin-right: 5px;
+}
+
+.button_box .right_text {
+    text-align: right;
+    margin-top: 5px;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#specifyColor {
+    accent-color: #007f61;
+}
+
+.pair_parent .pair_details {
+    display: none;
+}
+
+.active .pair_details {
+    display: block;
+}
